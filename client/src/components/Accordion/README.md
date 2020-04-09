@@ -1,0 +1,1 @@
+This component uses the RequestButton component and some svg asstes from the assets folder.

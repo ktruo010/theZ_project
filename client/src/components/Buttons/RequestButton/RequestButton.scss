@@ -1,0 +1,45 @@
+/* ------------------------------------------------- */
+/* Offer Buttons */
+/* ------------------------------------------------- */
+.requestButton {
+/* ----- For the blue button offers ----- */
+    &__quote {
+        background-image: linear-gradient(to bottom, rgb(0, 162, 255), rgb(0, 135, 212));
+        width: 18rem;
+        height: 4.5rem;
+        border: none;
+        border-radius: 20rem / 20rem;
+        color: #ffffff;
+        font-size: 2rem;
+        position: relative;
+        margin-top: -5rem;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+    /* ----- For the orange button ----- */
+    &__buy {
+        background-image: linear-gradient(to bottom, rgb(255, 136, 0), rgb(236, 87, 0));
+        width: 18rem;
+        height: 4.5rem;
+        border: none;
+        border-radius: 20rem / 20rem;
+        color: #ffffff;
+        font-size: 2rem;
+        position: relative;
+    }
+
+
+
+    &__icon {
+        position: absolute;
+        left: 2rem;
+        margin-top: 2px;
+        margin-left: 1rem;
+    }
+
+    &__text {
+        margin-left: 2rem;;
+    }
+}

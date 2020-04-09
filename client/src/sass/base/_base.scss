@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-image: linear-gradient(to right, rgb(255,255,255) 80%, rgb(196, 196, 196));
+}

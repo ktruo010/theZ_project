@@ -1,0 +1,1 @@
+This page uses the Accordiona and Header component.

@@ -1,0 +1,224 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(to right, white 80%, #c4c4c4); }
+
+/* ------------------------------------------------- */
+/* Accordion Component Top Section */
+/* ------------------------------------------------- */
+.accordion {
+  border-radius: 10px;
+  margin: 0 10px;
+  width: 90rem;
+  border: solid grey 1px;
+  /* ----- Top half of component that does not expand ----- */
+  /* ----- Title, stars, and feature icons ----- */
+  /* ----- Rate and Buttons ----- */
+  /* ----- Settings for accordion animation ----- */
+  /* ------------------------------------------------- */
+  /* Accordion Component Bottom Section */
+  /* ------------------------------------------------- */ }
+  .accordion:focus {
+    outline: none; }
+  .accordion__header {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #444;
+    padding: 18px;
+    border: none;
+    outline: none;
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-rows: 1fr;
+    /* ----- Icon Div ----- */ }
+    .accordion__header_col1 {
+      grid-column: 1; }
+    .accordion__header_col2 {
+      grid-column: 2; }
+    .accordion__header_col3 {
+      grid-column: 3; }
+  .accordion__header_col2 {
+    display: grid;
+    justify-items: left;
+    position: relative; }
+    .accordion__header_col2_row1 {
+      font-size: 3rem; }
+    .accordion__header_col2_row2 {
+      margin: 0;
+      font-size: 3rem;
+      position: absolute;
+      top: 40%;
+      display: flex;
+      align-items: center; }
+    .accordion__header_col2_row2-icons {
+      margin-left: 1rem;
+      margin-top: 1rem; }
+  .accordion__header_col3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative; }
+    .accordion__header_col3_row1-col1 {
+      position: absolute;
+      top: 23%;
+      grid-column: 1;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: blue; }
+    .accordion__header_col3_row1-col2 {
+      grid-column: 2;
+      font-size: 4rem;
+      font-weight: 300; }
+    .accordion__header_col3_row2-col1 {
+      position: absolute;
+      right: 0;
+      top: 5.5rem; }
+  .accordion__content {
+    background-color: white;
+    overflow: auto;
+    transition: max-height 0.6s ease; }
+  .accordion__details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* ----- Features Section ----- */
+    /* ----- Tagline/information section ----- */ }
+    .accordion__details_col1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 3fr 9fr; }
+      .accordion__details_col1_row1-col1 {
+        width: 100%;
+        text-align: left;
+        margin-left: 4rem;
+        font-size: 2rem;
+        grid-column: 1 / span 2; }
+        .accordion__details_col1_row1-col1::after {
+          content: "";
+          display: block;
+          background-color: grey;
+          width: 80%;
+          height: 1px;
+          margin-top: 10px;
+          margin-bottom: 10px; }
+      .accordion__details_col1_row2-col1 {
+        font-size: 1.5rem;
+        column-count: 2;
+        column-gap: 2.5rem;
+        width: 100%;
+        grid-column: 1 / span 2;
+        text-align: left;
+        justify-self: left;
+        margin-left: 6rem;
+        padding-right: 9rem; }
+    .accordion__details_col2 {
+      display: grid;
+      grid-template-rows: 3fr 9fr;
+      text-align: left; }
+      .accordion__details_col2_row1 {
+        width: 100%;
+        font-size: 2rem; }
+        .accordion__details_col2_row1::after {
+          content: "";
+          display: block;
+          background-color: grey;
+          width: 90%;
+          height: 1px;
+          margin-top: 10px;
+          margin-right: 20%;
+          margin-bottom: 10px; }
+      .accordion__details_col2_row2 {
+        justify-self: left;
+        text-align: left;
+        font-size: 1.5rem;
+        margin-right: 5rem; }
+  .accordion__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px lightgrey;
+    padding: 1rem;
+    cursor: pointer; }
+    .accordion__footer_rotate {
+      transform: rotate(180deg); }
+
+/* ------------------------------------------------- */
+/* Offer Buttons */
+/* ------------------------------------------------- */
+.requestButton {
+  /* ----- For the blue button offers ----- */
+  /* ----- For the orange button ----- */ }
+  .requestButton__quote {
+    background-image: linear-gradient(to bottom, #00a2ff, #0087d4);
+    width: 18rem;
+    height: 4.5rem;
+    border: none;
+    border-radius: 20rem / 20rem;
+    color: #ffffff;
+    font-size: 2rem;
+    position: relative;
+    margin-top: -5rem;
+    cursor: pointer; }
+    .requestButton__quote:focus {
+      outline: none; }
+  .requestButton__buy {
+    background-image: linear-gradient(to bottom, #ff8800, #ec5700);
+    width: 18rem;
+    height: 4.5rem;
+    border: none;
+    border-radius: 20rem / 20rem;
+    color: #ffffff;
+    font-size: 2rem;
+    position: relative; }
+  .requestButton__icon {
+    position: absolute;
+    left: 2rem;
+    margin-top: 2px;
+    margin-left: 1rem; }
+  .requestButton__text {
+    margin-left: 2rem; }
+
+.Header {
+  height: 4rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 9fr 4fr;
+  margin: 4rem auto; }
+  .Header__text {
+    font-size: 2rem;
+    margin: .5rem 0; }
+  .Header__sort {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-size: 1.5rem; }
+  .Header__dropdown-text {
+    margin: 1rem 0;
+    text-align: right;
+    margin-right: 1rem; }
+  .Header__dropdown {
+    font-size: inherit;
+    border: solid grey 1px;
+    text-align-last: center; }
+
+.offers {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  align-content: center; }
+  .offers__row {
+    display: grid;
+    grid-template-rows: 1fr 12fr;
+    justify-content: center;
+    height: 4rem; }
+  .offers__options {
+    grid-row: 2; }
+  .offers__item {
+    margin: 2rem auto; }
