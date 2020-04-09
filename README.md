@@ -1,6 +1,13 @@
-This is a projec that utilizes ReactJS. The application pulls in data from a simulated JSON server with json-server.
+# What is it?
+This is a website that pulls insurance provider and quote information from a JSON file and displays that information in a user-friendly listing for the consumer to view, compare and sort.
 
-INSTRUCTIONS:
-1. "npm i" on the root folder
-2. "npm i" in the /client folder
-3. on the root folder run "npm run start"
+# Technologies Used:
+    Framework: ReactJS (Hooks, Classes)
+    Data: JSON, json-server NPM
+
+# Installation Instructions:
+In the command line:
+    1. Run "npm i" in the root folder
+    2. Run "npm i" in the /client folder
+    3. Run "npm run start" in root folder
+

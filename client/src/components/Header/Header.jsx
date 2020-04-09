@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = ({ handleDropDownSort, offers }) => {
 
-
+    // passing data to the parent component
     const handleSelectSort = event => {
         handleDropDownSort(event.target.value)
     }
